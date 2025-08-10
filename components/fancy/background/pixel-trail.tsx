@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useCallback, useMemo, useRef } from "react"
+import React, { useCallback, useMemo, useRef, RefObject } from "react"
 import { motion, useAnimationControls } from "motion/react"
 import { v4 as uuidv4 } from "uuid"
 
@@ -23,7 +23,7 @@ const PixelTrail: React.FC<PixelTrailProps> = ({
   pixelClassName,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null)
-  const dimensions = useDimensions(containerRef)
+  const dimensions = useDimensions(containerRef as RefObject<HTMLElement>)
   const trailId = useRef(uuidv4())
 
   const handleMouseMove = useCallback(
@@ -38,7 +38,7 @@ const PixelTrail: React.FC<PixelTrailProps> = ({
         `${trailId.current}-pixel-${x}-${y}`
       )
       if (pixelElement) {
-        const animatePixel = (pixelElement as any).__animatePixel
+        const animatePixel = (pixelElement as HTMLDivElement & { __animatePixel?: () => void }).__animatePixel
         if (animatePixel) animatePixel()
       }
     },
@@ -100,13 +100,13 @@ const PixelDot: React.FC<PixelDotProps> = React.memo(
         opacity: [1, 0],
         transition: { duration: fadeDuration / 1000, delay: delay / 1000 },
       })
-    }, [])
+    }, [controls, fadeDuration, delay])
 
     // Attach the animatePixel function to the DOM element
     const ref = useCallback(
       (node: HTMLDivElement | null) => {
         if (node) {
-          ;(node as any).__animatePixel = animatePixel
+          ;(node as HTMLDivElement & { __animatePixel?: () => void }).__animatePixel = animatePixel
         }
       },
       [animatePixel]

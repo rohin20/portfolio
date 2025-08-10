@@ -25,7 +25,7 @@ export default function Home() {
           </p>
 
           <p className="text-lg pointer-events-auto">
-            recently went to ycombinator's ai startup school and the ycombinator x openai event in new york
+            recently went to ycombinator&apos;s ai startup school and the ycombinator x openai event in new york
           </p>
 
           <p className="text-lg pointer-events-auto">
