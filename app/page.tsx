@@ -7,33 +7,42 @@ export default function Home() {
         pixelSize={12}
         fadeDuration={500}
         delay={0}
-        pixelClassName="bg-green-500"
+        pixelClassName="bg-green-600"
       />
       
       <div className="max-w-2xl w-full relative pointer-events-none">
         <div className="space-y-3">
-          <h1 className="text-2xl font-medium text-foreground pointer-events-auto">
+          <h1 className="text-2xl font-medium text-foreground pointer-events-auto ">
             Rohin Phukan
           </h1>
           
           <p className="text-lg pointer-events-auto">
-            studying cs @ cornell
+            currently studying cs @ cornell, prev. research @ usc
           </p>
           
           <p className="text-lg pointer-events-auto">
-            blah blah blah
+            working on autonomous robots, efficient data retrieval, and pushing the limits of ai
           </p>
-            
+
+          <p className="text-lg pointer-events-auto">
+            recently went to ycombinator's ai startup school and the ycombinator x openai event in new york
+          </p>
+
+          <p className="text-lg pointer-events-auto">
+            i also enjoy pickleball, poker, coffee, and tea :) 
+          </p>
           
-          <div className="flex space-x-4 text-foreground">
+          <div className="h-px bg-foreground/20 my-6"></div>
+          
+          <div className="flex space-x-4 text-foreground ">  
             <a 
-              href="https://x.com/rohinph" 
+              href="https://github.com/rohin20" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:opacity-70 transition-opacity underline pointer-events-auto"
             >
-              x
-            </a>
+              github
+            </a>          
             <a 
               href="https://linkedin.com/in/rohin-phukan" 
               target="_blank" 
@@ -42,6 +51,7 @@ export default function Home() {
             >
               linkedin
             </a>
+            
             <a 
               href="mailto:rp667@cornell.edu"
               className="hover:opacity-70 transition-opacity pointer-events-auto"
