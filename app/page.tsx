@@ -10,9 +10,9 @@ export default function Home() {
         pixelClassName="bg-green-600"
       />
       
-      <div className="max-w-2xl w-full relative pointer-events-none">
+      <div className="max-w-2xl w-full relative pointer-events-none fade-in fade-in-delay-1">
         <div className="space-y-3">
-          <h1 className="text-2xl font-medium text-foreground pointer-events-auto ">
+          <h1 className="text-2xl font-medium text-foreground pointer-events-auto">
             Rohin Phukan
           </h1>
           
@@ -34,7 +34,7 @@ export default function Home() {
           
           <div className="h-px bg-foreground/20 my-6"></div>
           
-          <div className="flex space-x-4 text-foreground ">  
+          <div className="flex space-x-4 text-foreground">  
             <a 
               href="https://github.com/rohin20" 
               target="_blank" 
