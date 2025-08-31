@@ -21,7 +21,7 @@ export default function Home() {
           </p>
           
           <p className="text-lg pointer-events-auto">
-            working on autonomous robots, efficient data retrieval, and pushing the limits of ai
+            interested in autonomous robots and efficient data retrieval
           </p>
 
           <p className="text-lg pointer-events-auto">
