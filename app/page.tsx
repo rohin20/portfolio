@@ -27,10 +27,6 @@ export default function Home() {
           <p className="text-lg pointer-events-auto">
             recently went to ycombinator&apos;s ai startup school and the ycombinator x openai event in new york
           </p>
-
-          <p className="text-lg pointer-events-auto">
-            i also enjoy pickleball, poker, coffee, and tea :) 
-          </p>
           
           <div className="h-px bg-foreground/20 my-6"></div>
           
