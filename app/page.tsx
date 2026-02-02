@@ -17,7 +17,7 @@ export default function Home() {
           </h1>
           
           <p className="text-lg pointer-events-auto">
-            currently studying cs and doing research @ cornell, prev. research @ usc
+            currently studying cs and doing research @ cornell, incoming sde @ Amazon
           </p>
           
           <p className="text-lg pointer-events-auto">
